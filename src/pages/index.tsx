@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import axios from "axios";
 import localFont from "next/font/local";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const geistSans = localFont({
@@ -76,8 +77,8 @@ export default function Home() {
         <header className="text-5xl font-bold text-center mt-5">
           Jared's Cryptography Library
         </header>
-        <div className="flex flex-col justify-center items-center mx-auto mt-8 max-w-2xl text-lg text-[var(--foreground)]">
-          <p>
+        <div className="flex flex-col mx-auto mt-8 max-w-2xl text-lg text-[var(--foreground)]">
+          <p className="text-center">
             This is my personal Cryptography Library. Currently it only supports
             cryptography using Caesar's Cipher. Over time, I will be adding more
             advanced ciphers and algorithms. The library is written in
@@ -86,13 +87,37 @@ export default function Home() {
             backend is written in{" "}
             <span className="font-bold">Typescript (Node)</span>
             and <span className="font-bold">Express.js</span>. Child_Process is
-            being used to connect my backend with the C library.
+            being used to connect my backend with the C library I built.
           </p>
+          <header className="text-3xl text-center mt-10 font-semibold">
+            Source Code
+          </header>
+          <div className="mt-6 flex justify-around">
+            <Link
+              href={`https://github.com/CalculusCoder/c-cryptography-library`}
+            >
+              <Button className="bg-white text-black hover:text-white">
+                C Cryptography Library
+              </Button>
+            </Link>
+            <Link
+              href={`https://github.com/CalculusCoder/cryptography-library-frontend`}
+            >
+              <Button className="bg-white text-black hover:text-white">
+                Front End
+              </Button>
+            </Link>
+            <Link
+              href={`https://github.com/CalculusCoder/cryptography-library-backend`}
+            >
+              <Button className="bg-white text-black hover:text-white">
+                Backend
+              </Button>
+            </Link>
+          </div>
         </div>
 
-        <div
-          className={`min-h-screen flex flex-col items-center justify-center p-6`}
-        >
+        <div className={` flex flex-col items-center p-6 mt-16`}>
           <header className="text-4xl font-bold text-center mb-10">
             Caesar's Cipher
           </header>
