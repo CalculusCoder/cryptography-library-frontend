@@ -1,10 +1,8 @@
 import InputFile from "@/components/caeser_cipher/input_file";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import axios from "axios";
 import localFont from "next/font/local";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -80,11 +78,11 @@ export default function Home() {
         <div className="flex flex-col mx-auto mt-8 max-w-2xl text-lg text-[var(--foreground)]">
           <p className="text-center">
             This is my personal Cryptography Library. Currently it only supports
-            cryptography using Caesar's Cipher. Over time, I will be adding more
-            advanced ciphers and algorithms. The library is written in
+            cryptography using Caesar&apos;s Cipher. Over time, I will be adding
+            more advanced ciphers and algorithms. The library is written in
             <span className="font-bold text-xl"> C</span>. The front end UI is
             written with <span className="font-bold text-xl">Next.js</span>. The
-            backend is written in{" "}
+            backend is written in
             <span className="font-bold">Typescript (Node)</span>
             and <span className="font-bold">Express.js</span>. Child_Process is
             being used to connect my backend with the C library I built.
