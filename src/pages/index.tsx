@@ -73,7 +73,7 @@ export default function Home() {
         className={`${geistSans.variable} ${geistMono.variable} bg-[var(--background)] text-[var(--foreground)] font-[family-name:var(--font-geist-sans)]`}
       >
         <header className="text-5xl font-bold text-center mt-5">
-          Jared's Cryptography Library
+          Jared&apos;s Cryptography Library
         </header>
         <div className="flex flex-col mx-auto mt-8 max-w-2xl text-lg text-[var(--foreground)]">
           <p className="text-center">
@@ -117,7 +117,7 @@ export default function Home() {
 
         <div className={` flex flex-col items-center p-6 mt-16`}>
           <header className="text-4xl font-bold text-center mb-10">
-            Caesar's Cipher
+            Caesar&apos;s Cipher
           </header>
 
           <div className="w-full max-w-lg bg-[var(--background)] rounded-lg p-8 shadow-lg border border-gray-700">
