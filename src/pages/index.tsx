@@ -2,15 +2,6 @@ import CaesarCipher from "@/components/caeser_cipher/caesar";
 import ColumnarCipher from "@/components/columnar_transposition_cipher/columnar_cipher";
 import SelectButton from "@/components/common/select_button";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import localFont from "next/font/local";
 import Link from "next/link";
 import { useState } from "react";
