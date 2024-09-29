@@ -1,6 +1,7 @@
 import CaesarCipher from "@/components/caeser_cipher/caesar";
 import ColumnarCipher from "@/components/columnar_transposition_cipher/columnar_cipher";
 import SelectButton from "@/components/common/select_button";
+import DiffieHellman from "@/components/diffie_hellman/diffie_hellman";
 import { Button } from "@/components/ui/button";
 import localFont from "next/font/local";
 import Link from "next/link";
@@ -26,6 +27,10 @@ export default function Home() {
   }
   if (cipher === "columnar") {
     content = <ColumnarCipher cipher={cipher} />;
+  }
+
+  if (cipher === "diffie-hellman") {
+    content = <DiffieHellman cipher={cipher} />;
   }
 
   return (

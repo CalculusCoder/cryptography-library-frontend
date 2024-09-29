@@ -24,6 +24,9 @@ const SelectButton: React.FC<Props> = ({ setCipher }) => {
           <SelectLabel>Cipher&apos;s</SelectLabel>
           <SelectItem value="caesar">Caesar&apos;s</SelectItem>
           <SelectItem value="columnar">Columnar Transposition</SelectItem>
+          <SelectItem value="diffie-hellman">
+            Diffie Hellman Key Exchange
+          </SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>
